@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color:#183b56;
+    --secondary-text-color:#577592;
+    --accent-color:#2294ed;
+    --accent-color-dark:#1d69a3;
+    --padding-inline-section:20px;
+}
+body{
+    font-family: 'Poppins',sans-serif;
+    color: var(--primary-text-color);
+}
+h1{
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.25rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.flex
+{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.hover-link 
+{
+    color:var(--primary-text-color);
+    transition: 0.2s ease-in-out;
+}
+.hover-link:hover
+{
+    color: var(--accent-color);  
+
+}
+.secondary-button{
+    border: 0.5px solid var(--accent-color-dark) ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: var(--accent-color-dark) !important;
+}
+.secondary-button:hover
+{
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+.primary-button
+{
+    background-color: var(--accent-color);
+    color:white !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-in-out;
+}
+.primary-button:hover{
+    background-color:var(--accent-color-dark);
+}
+/* utility class end */
+.container
+{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+}
+.small-bold-text
+{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    padding-top: 2vw;
+}
+.topbanner
+{
+    background-image: url('./Images/asset\ 28.png');
+    background-color: #4fb3d4;
+    background-size: 300px;
+}
+.banner-text
+{
+    color:rgb(255, 250, 250);
+    padding: 15px  30px; /*top/down right/left*/
+    text-align: center;
+}
+
+
+/* nav */
+.main-nav
+{
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.comapanylogo img{
+    width: 10.417vw;
+}
+.navlinks
+{
+    flex-basis: 730px;
+}
+.navlinks ul{
+    justify-content: end;
+    gap:40px;
+}
+/* hearder section  */
+.header{
+    padding: 50px var(--padding-inline-section);
+    
+}
+.header-section
+{
+    justify-content: center;
+    gap: 50px;
+}
+.headerRight
+{
+    padding-top: 14px;
+    margin-top: 25px;
+}
+.headerRight img
+{
+    width: 600px;
+    margin-top: 25px;
+}
+.headerleft h1
+{
+    font-size: 45px;
+}
+.headerleft p
+{
+    font-size: 20px;
+    width: 80%;
+    line-height: 1.7vw;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+/* company-header */
+.company-header
+{
+ text-align: center;
+ margin-block:30px ;
+ color: var(--primary-text-color);
+}
+.logos
+{
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo
+{
+    height: 47px;
+}
+.feature-section
+{
+    text-align: center;
+    margin-block: 30px ;
+ color: var(--primary-text-color);
+ padding: 80px var(--padding-inline-section) 0px;
+
+}
+.featuresection
+{
+background-image: url(./Images/asset\ 29.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+}
+.feature-section h2
+{
+    margin-bottom: 20px;
+}
+.featurecard
+{
+    flex-direction: column;
+    gap: 18px;
+    max-width: 30%;
+    text-align: center;
+}
+.features-area
+{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    margin-top: 20px;
+}
+.bigfeaturesection
+{
+    padding: 30px var(--padding-inline-section);
+}
+.featureleft img
+{
+    width: 100%;
+}
+.bigfeaturesectiontext
+{
+    gap: 30px;
+}
+.pararight p
+{
+    width: 80%;
+    line-height: 1.7vw;
+}
+.examplecard
+{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background-color: #183b56;
+    background:linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8)),url('https://static.vecteezy.com/system/resources/thumbnails/001/849/553/small_2x/modern-gold-background-free-vector.jpg');
+
+}
+.card-text
+{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+.examplecard
+{
+    justify-content: space-between;
+    margin-block: 30px;
+    margin-left: 25px;
+}
+.cta{
+background-color: #183b56;
+padding: 120px var(--padding-inline-section) 80px;
+
+}
+.cta-section
+{
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+    color: rgb(255, 255, 255);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    background-color: #ffffff;
+    color: #020202;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1 1 250px;
+    margin: 10px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.footer-section p {
+    line-height: 1.6;
+    font-size: 14px;
+    color: #212121;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    text-decoration: none;
+    color: #070707;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    text-decoration: none;
+    color: #201f1f;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #fff;
+    color: #222;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #aaa;
+}
